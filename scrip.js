@@ -10,3 +10,12 @@ const show = () => {
 };
 
 document.getElementById("tot").innerText += document.getElementsByClassName("card").length;
+
+let link = document.getElementsByClassName("link");
+link = Array.from(link);
+
+const cambiaLink = (event) => {
+  if (event.target.innerText === "Nascondi sezione") event.target.innerText = "Mostra sezione";
+  else if (event.target.innerText === "Mostra sezione") event.target.innerText = "Nascondi sezione";
+};
+link.forEach((x) => x.addEventListener("click", cambiaLink));
