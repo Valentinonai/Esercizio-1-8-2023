@@ -28,3 +28,13 @@ document.querySelectorAll(".link").forEach((x) =>
   })
 );
 */
+
+let scroll = 0;
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 500) {
+    document.querySelector(".navbar").style.display = "none";
+    console.log(scroll, window.scrollY);
+    if (scroll > window.scrollY) document.querySelector(".navbar").style.display = "block";
+    scroll = window.scrollY;
+  } else document.querySelector(".navbar").style.display = "block";
+});
