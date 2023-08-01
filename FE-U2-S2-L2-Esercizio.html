@@ -141,10 +141,10 @@ EXTRAS
               <a class="nav-link" href="#Recensioni">Recensioni</a>
             </li>
             <li class="nav-item">
-              <a id="show" class="nav-link disabled" href="#" onclick="show()">Show card</a>
+              <a id="show" class="nav-link disabled" href="#" onclick="show()">Show</a>
             </li>
             <li class="nav-item">
-              <a id="remove" class="nav-link" href="#" onclick="rimuovi()">Rimuovi card</a>
+              <a id="remove" class="nav-link" href="#" onclick="rimuovi()">Rimuovi</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -154,6 +154,11 @@ EXTRAS
         </div>
       </div>
     </nav>
+    <!-- Conteggio -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong id="tot">Viaggi nella pagina: </strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
     <!--Sezione introduttiva  -->
     <div class="container">
       <div class="px-5 bg-body-tertiary rounded my-4">
@@ -182,46 +187,44 @@ EXTRAS
       </div>
 
       <div class="collapse show" id="collapseExample">
-        <div class="card card-body border-0 p-0">
-          <div class="row justify-content-between gy-3">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card border border-2 rounded border-info">
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" width="200px" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+        <div class="row justify-content-between gy-3">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 rounded border-info">
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" width="200px" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card border border-2 rounded border-info">
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 rounded border-info">
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card border border-2 rounded border-info">
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 rounded border-info">
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card border border-2 rounded border-info">
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card border border-2 rounded border-info">
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
           </div>
@@ -246,72 +249,70 @@ EXTRAS
         </a>
       </div>
       <div class="collapse show" id="collapseWelcome">
-        <div class="card card-body border-0 p-0">
-          <div class="row gy-3">
-            <div class="col-sm-6 col-lg-4 col-xl-2">
-              <div class="card rounded shadow-lg" style="position: relative">
-                <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+        <div class="row gy-3">
+          <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="card rounded shadow-lg" style="position: relative">
+              <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
-              <div class="card rounded shadow-lg" style="position: relative">
-                <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="card rounded shadow-lg" style="position: relative">
+              <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
-              <div class="card rounded shadow-lg" style="position: relative">
-                <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="card rounded shadow-lg" style="position: relative">
+              <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
-              <div class="card rounded shadow-lg" style="position: relative">
-                <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="card rounded shadow-lg" style="position: relative">
+              <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
-              <div class="card rounded shadow-lg" style="position: relative">
-                <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="card rounded shadow-lg" style="position: relative">
+              <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
-            <div class="col-sm-6 col-lg-4 col-xl-2">
-              <div class="card rounded shadow-lg" style="position: relative">
-                <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
-                <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
-                <div class="card-body">
-                  <h5 class="card-title">Titolo</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
-                  <a href="#" class="btn btn-info">Prenota</a>
-                </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-xl-2">
+            <div class="card rounded shadow-lg" style="position: relative">
+              <span class="position-absolute top-0 end-0 badge rounded bg-danger">Hot</span>
+              <img src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" class="card-img-top" alt="img" />
+              <div class="card-body">
+                <h5 class="card-title">Titolo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, accusamus.</p>
+                <a href="#" class="btn btn-info">Prenota</a>
               </div>
             </div>
           </div>
@@ -368,37 +369,35 @@ EXTRAS
         </a>
       </div>
       <div class="collapse show" id="collapseLast">
-        <div class="card card-body border-0 p-0">
-          <div class="row g-3">
-            <div class="col-sm-6 col-md-4 col-xl-2">
-              <div class="rounded shadow">
-                <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
-              </div>
+        <div class="row g-3">
+          <div class="col-sm-6 col-md-4 col-xl-2">
+            <div class="rounded shadow">
+              <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-2">
-              <div class="rounded shadow">
-                <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
-              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2">
+            <div class="rounded shadow">
+              <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-2">
-              <div class="rounded shadow">
-                <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
-              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2">
+            <div class="rounded shadow">
+              <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-2">
-              <div class="rounded shadow">
-                <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
-              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2">
+            <div class="rounded shadow">
+              <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-2">
-              <div class="rounded shadow">
-                <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
-              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2">
+            <div class="rounded shadow">
+              <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
             </div>
-            <div class="col-sm-6 col-md-4 col-xl-2">
-              <div class="rounded shadow">
-                <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
-              </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-2">
+            <div class="rounded shadow">
+              <img class="rounded" src="./salome-guruli-lBf76Nbu24g-unsplash.jpg" alt="img" width="100%" />
             </div>
           </div>
         </div>

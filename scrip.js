@@ -8,3 +8,5 @@ const show = () => {
   document.getElementById("show").classList.add("disabled");
   document.getElementById("remove").classList.remove("disabled");
 };
+
+document.getElementById("tot").innerText += document.getElementsByClassName("card").length;
